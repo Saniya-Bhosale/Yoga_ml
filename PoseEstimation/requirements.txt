@@ -6,5 +6,6 @@ opencv-python==4.9.0.80
 scikit-learn==1.4.2
 requests==2.31.0
 python-dotenv==1.0.1      
-tensorflow_hub
+tensorflow_hub>=0.13.0
+
 
