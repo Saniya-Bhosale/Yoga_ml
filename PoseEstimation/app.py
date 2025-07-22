@@ -43,6 +43,10 @@ except Exception as e:
 
 @app.route('/')
 def index():
+    return "Hello from Flask!"
+
+@app.route('/index')
+def index():
     return render_template('index.html')
 
 @app.route('/analyze-image', methods=['POST'])
