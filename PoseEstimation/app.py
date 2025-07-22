@@ -164,6 +164,6 @@ def calculate_accuracy_score(feedback, is_correct):
 #     app.run(debug=False, host='0.0.0.0', port=port)
 
 if __name__ == '__main__':
-    port = int(os.getenv("PORT"))  # default to 10000 if PORT not set
-    host = os.getenv("HOST")   # default to 0.0.0.0
+    port = int(os.environ.get('PORT', 5000))     # Default to 5000
+    host = os.environ.get('HOST', '0.0.0.0')      # Default to 0.0.0.0
     app.run(host=host, port=port)
